@@ -1,0 +1,196 @@
+@page-back: #fff;
+@control-bar-back: #fff;
+@color-radiant: #6aa000;
+@color-font-light: #fff;
+@color-font-dark: #000;
+@color-font-radiant: #5c6781;
+
+@min-width: 500px;
+@max-width: 1000px;
+
+.trans(@s) {
+  transition: box-shadow @s ease, background-color @s ease, border-color @s ease, color @s ease;
+}
+
+@font-face {
+  font-family: 'pt sans';
+  font-weight: normal;
+  src: url("../fonts/PTSansRegular.ttf");
+}
+@font-face {
+  font-family: 'pt sans';
+  font-weight: bold;
+  src: url("../fonts/PTSansBold.ttf");
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'pt sans', arial, tahoma;
+  font-size: 15px;
+  font-weight: normal;
+  -webkit-backface-visibility: hidden;
+  cursor: default;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: @page-back;
+}
+div#page {
+  display: table;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  min-width: @min-width;
+  max-width: @max-width;
+  height: 100%;
+  background: @page-back;
+}
+div#page > * {
+   position: relative;
+}
+div#window {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  visibility: hidden;
+  z-index: 3100;
+}
+div#window > * {
+  position: relative;
+  visibility: visible;
+}
+@media (min-width: @max-width) {
+  div#window {
+    width: @max-width;
+    left: 50%;
+    margin-left: -(@max-width / 2);
+  }
+  div#page > header, div#page > footer {
+    left: auto;
+    right: auto;
+    width: @max-width;
+  }
+}
+div#control-bar {
+  width: 100%;
+  padding: 15px 20px 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+div#control-bar a {
+  display: block;
+  float: left;
+  margin: 0 15px 0 0;
+  color: @color-font-dark;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+div#control-bar a:last-child {
+  margin-right: 0;
+}
+div#control-bar a.red {
+  color: @color-radiant;
+}
+div#control-bar a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+div#control-bar a:hover {
+  text-decoration: underline;
+}
+div.panel-logo {
+  width: 252px;
+  padding-top: 180px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 150px auto 0;
+  background: transparent url("../images/logo.png") no-repeat top;
+  background-size: 100%;
+}
+div.panel-search {
+  width: 600px;
+  margin: 50px auto 20px;
+  overflow: hidden;
+}
+div.panel-search input {
+  width: 500px;
+  float: left;
+  border: 1px solid #b0b0b0;
+  box-shadow: inset 0 1px 3px #ccc;
+}
+div.panel-search input:hover, div.panel-search input:focus {
+  border-color: #909090;
+}
+div.panel-search input:focus {
+  box-shadow: inset 0 2px 5px #bbb;
+}
+div.panel-search button {
+  width: 90px;
+  float: right;
+  height: 37px;
+}
+div#footer-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+div#footer-bar .inner {
+  width: 100%;
+  padding: 0 20px;
+  max-width: @max-width;
+  min-width: @min-width;
+  margin: 0 auto;
+}
+div#footer-bar * {
+  font-size: 13px;
+  font-weight: bold;
+  color: @color-font-radiant;
+}
+div#footer-bar a {
+  float: left;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  .trans(0.1s);
+}
+div#footer-bar a:hover {
+  color: lighten(@color-font-radiant, 20%);
+}
+input, textarea {
+  padding: 8px 12px;
+  outline: none;
+  cursor: text;
+  .trans(0.1s);
+}
+button {
+  outline: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid darken(#f6f6f6, 20%);
+  background-color: #f6f6f6;
+  border-radius: 3px;
+  .trans(0.1s);
+}
+button:hover {
+  border-color: darken(#f6f6f6, 25%);
+  background-color: darken(#f6f6f6, 5%);
+}
+button:active {
+  border-color: darken(#f6f6f6, 35%);
+  background-color: darken(#f6f6f6, 15%);
+}
