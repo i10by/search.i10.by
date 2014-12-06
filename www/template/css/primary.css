@@ -28,45 +28,32 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
-}
-div#page {
-  display: table;
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 100%;
-  min-width: 500px;
-  max-width: 1000px;
-  height: 100%;
-  background: #ffffff;
-}
-div#page > * {
-  position: relative;
 }
 div#window {
   position: fixed;
-  width: 100%;
   top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  visibility: hidden;
-  z-index: 3100;
+  background: #ffffff url("../images/wall.jpg") no-repeat center;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 100;
 }
-div#window > * {
+div#page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 500px;
+  max-width: 1000px;
+  z-index: 1001;
+}
+div#page > * {
   position: relative;
-  visibility: visible;
-}
-@media (min-width: 1000px) {
-  div#window {
-    width: 1000px;
-    left: 50%;
-    margin-left: -500px;
-  }
-  div#page > header,
-  div#page > footer {
-    left: auto;
-    right: auto;
-    width: 1000px;
-  }
 }
 div#control-bar {
   width: 100%;
@@ -85,9 +72,6 @@ div#control-bar a {
 }
 div#control-bar a:last-child {
   margin-right: 0;
-}
-div#control-bar a.red {
-  color: #6aa000;
 }
 div#control-bar a.active {
   font-weight: bold;

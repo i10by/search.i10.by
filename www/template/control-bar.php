@@ -5,6 +5,6 @@
         <a href="#">Услуги</a>
     </div>
     <div class="right">
-        <a href="#" class="red">Войти в учётную запись</a>
+        <a href="#" class="special">Войти в учётную запись</a>
     </div>
 </div>
