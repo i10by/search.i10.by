@@ -59,11 +59,14 @@ div#page {
   left: 0;
   right: 0;
   bottom: 0;
-  box-sizing: border-box;
-  margin: 0 auto;
-  min-width: @min-width;
-  max-width: @max-width;
   z-index: 1001;
+}
+.inner {
+  width: 100%;
+  max-width: @max-width;
+  min-width: @min-width;
+  min-height: 100%;
+  margin: 0 auto;
 }
 div#page > * {
    position: relative;
@@ -135,17 +138,13 @@ div#footer-bar {
   bottom: 0;
   padding-bottom: 10px;
 }
-div#footer-bar .inner {
-  width: 100%;
+.inner {
   padding: 0 20px;
-  max-width: @max-width;
-  min-width: @min-width;
-  margin: 0 auto;
 }
 div#footer-bar * {
   font-size: 13px;
   font-weight: bold;
-  color: @color-font-radiant;
+  color: lighten(@color-font-dark, 20%);;
 }
 div#footer-bar a {
   float: left;
@@ -157,7 +156,7 @@ div#footer-bar a {
   .trans(0.1s);
 }
 div#footer-bar a:hover {
-  color: lighten(@color-font-radiant, 20%);
+  color: lighten(@color-font-dark, 60%);
 }
 input, textarea {
   padding: 8px 12px;

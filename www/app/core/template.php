@@ -9,9 +9,11 @@
     </head>
     <body>
         <div id="page">
-            <? get_template("control-bar"); ?>
-            <? get_page($url_page); ?>
-            <? get_template("footer-bar"); ?>
+            <div class="inner">
+                <? get_template("control-bar"); ?>
+                <? get_page($url_page); ?>
+                <? get_template("footer-bar"); ?>
+            </div>
         </div>
         <div id="window"></div>
 
