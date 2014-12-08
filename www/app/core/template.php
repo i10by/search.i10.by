@@ -11,11 +11,12 @@
         <div id="page">
             <div class="inner">
                 <? get_template("control-bar"); ?>
-                <? get_page($url_page); ?>
+                <div id="page-body">
+                    <? get_page($url_page); ?>
+                </div>
                 <? get_template("footer-bar"); ?>
             </div>
         </div>
-        <div id="window"></div>
 
         <script src="/template/js/jquery.js"></script>
         <script src="/template/js/gui.js"></script>

@@ -1,10 +1,12 @@
 <div id="footer-bar">
-    <div class="inner">
-        <div class="left">
-            <a href="#">Вакансии</a>
-            <a href="#">Реклама</a>
+    <div class="left">
+        <div class="social-block">
+            <a href="#" class="social-item vk"></a>
+            <a href="#" class="social-item skype"></a>
         </div>
-        <div class="right">
+    </div>
+    <div class="right">
+        <div class="copy-block">
             © i10 group
         </div>
     </div>
