@@ -1,3 +1,4 @@
+@body-back: #e0e0e0;
 @page-back: #fff;
 @control-bar-back: #fff;
 @color-nav-back: #2c3440;
@@ -36,6 +37,7 @@ input, textarea {
   cursor: text;
   border: 1px solid #b0b0b0;
   box-shadow: inset 0 1px 3px #ccc;
+  border-radius: 3px;
   .trans(0.1s);
 }
 input:hover, input:focus {
@@ -80,18 +82,29 @@ button:active {
 }
 
 // PAGE
-html, body {
+html {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  padding: 0 10px;
+  background: @body-back url("../images/back.png") repeat;
 }
-div#page {
-  width: 100%;
+div#wrapper {
   max-width: @max-width;
   min-width: @min-width;
   min-height: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 20px auto;
+  border-radius: 3px;
+  overflow: hidden;
   background-color: @page-back;
+  border: 1px solid #b0b0b0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  box-shadow: 0 0 8px #c0c0c0;
+}
+div#page {
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
 }
 div#page > * {
    position: relative;
@@ -100,6 +113,7 @@ div#page > * {
 // HEADER
 div#control-bar {
   width: 100%;
+  margin-top: 10px;
   padding: 15px 20px 0;
   background-color: transparent;
   overflow: hidden;
@@ -330,11 +344,8 @@ div#nav a.special:hover {
 
 // FOOTER
 div#footer-bar {
-  margin: 0 60px 20px;
   padding: 0 10px;
-  border-radius: 5px;
   height: 60px;
-  overflow: hidden;
   background-color: @color-nav-back;
 }
 div#footer-bar .copy-block {

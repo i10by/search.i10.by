@@ -8,14 +8,16 @@
         <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
     </head>
     <body>
-        <div id="page">
-            <div class="inner">
-                <? get_template("control-bar"); ?>
-                <div id="page-body">
-                    <? get_page($url_page); ?>
+        <div id="wrapper">
+            <div id="page">
+                <div class="inner">
+                    <? get_template("control-bar"); ?>
+                    <div id="page-body">
+                        <? get_page($url_page); ?>
+                    </div>
                 </div>
-                <? get_template("footer-bar"); ?>
             </div>
+            <? get_template("footer-bar"); ?>
         </div>
 
         <script src="/template/js/jquery.js"></script>
