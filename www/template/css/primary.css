@@ -69,20 +69,16 @@ html {
   width: 100%;
   min-height: 100%;
   padding: 0 10px;
-  background: #e0e0e0 url("../images/back.png") repeat;
+  background: #ffffff;
 }
 div#wrapper {
-  max-width: 1150px;
+  max-width: 1070px;
   min-width: 900px;
   min-height: 100%;
   margin: 20px auto;
   border-radius: 3px;
   overflow: hidden;
   background-color: #ffffff;
-  border: 1px solid #b0b0b0;
-  border-top-width: 0;
-  border-bottom-width: 0;
-  box-shadow: 0 0 8px #c0c0c0;
 }
 div#page {
   width: 100%;
@@ -92,44 +88,11 @@ div#page {
 div#page > * {
   position: relative;
 }
-div#control-bar {
-  width: 100%;
-  margin-top: 10px;
-  padding: 15px 20px 0;
-  background-color: transparent;
-  overflow: hidden;
-}
-div#control-bar a {
-  display: block;
-  float: left;
-  margin: 7px 15px 0 0;
-  color: #808080;
-  font-size: 13px;
-  cursor: pointer;
-  text-decoration: none;
-}
-div#control-bar a:last-child {
-  margin-right: 0;
-}
-div#control-bar a:hover {
-  text-decoration: underline;
-}
-div#control-bar div.panel-search {
-  width: 300px;
-  overflow: hidden;
-}
-div#control-bar div.panel-search input {
-  width: 220px;
-  float: left;
-}
-div#control-bar div.panel-search button {
-  width: 70px;
-  float: right;
-}
 div#header-menu {
   width: 100%;
   height: 140px;
-  margin: 20px 0;
+  margin: 0 0 20px;
+  overflow: hidden;
 }
 div#header-menu .content {
   position: absolute;
@@ -153,8 +116,8 @@ div#header-menu .item {
   transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease;
 }
 div#header-menu .item:hover {
-  border-bottom: 1px solid #6aa000;
-  color: #6aa000;
+  border-bottom: 1px solid #65b977;
+  color: #65b977;
 }
 div#header-menu .item.right {
   float: right;
@@ -187,50 +150,51 @@ div#header-menu .item.special:hover {
   cursor: pointer;
 }
 div#nav {
-  background-color: #2c3440;
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.3);
   height: 35px;
   border-radius: 3px;
   overflow: hidden;
 }
 div#nav a {
+  border-right: 1px solid #d9d9d9;
   line-height: 35px;
   font-size: 13px;
   font-weight: bold;
   display: block;
   float: left;
   padding: 0 20px;
-  color: #ffffff;
-  border-right: 1px solid #171b22;
+  color: #444;
   text-decoration: none;
   cursor: pointer;
   transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease;
 }
 div#nav a:hover {
-  background-color: #171b22;
-  color: #cccccc;
+  background-color: #e4e4e4;
+  color: #111111;
 }
 div#nav a.right {
   float: right;
-  border-left: 1px solid #171b22;
+  border-left: 1px solid #d9d9d9;
   border-right: 0;
 }
 div#nav a.special {
-  color: #ffffff;
-  background-color: #6aa000;
+  color: #65b977;
+  background-color: #f6f6f6;
 }
 div#nav a.special:hover {
-  background-color: #486d00;
-  color: #cccccc;
+  background-color: #f1f1f1;
+  color: #397f48;
 }
 #page-body {
   min-height: 600px;
   margin: 20px;
-  padding: 20px 40px;
-  overflow: hidden;
+  padding: 20px 0;
 }
 .line-block {
   width: 100%;
-  overflow: hidden;
+  float: left;
   margin-bottom: 75px;
 }
 .line-block:last-child {
@@ -278,28 +242,53 @@ div#nav a.special:hover {
   padding: 15px;
   border: 1px solid #ccc;
   background-color: #f0f0f0;
-  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
 }
 .line-block .container {
+  position: relative;
   width: 32%;
   padding: 20px;
   margin-right: 2%;
   float: left;
-  overflow: hidden;
   text-align: center;
+  height: 317px;
+  overflow: hidden;
 }
 .line-block .container:last-child {
   margin-right: 0;
 }
+.line-block .container .ribbon {
+  position: absolute;
+  top: 16px;
+  left: -32px;
+  height: 32px;
+  width: 128px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 14px;
+  transform: rotate(-45deg);
+  border: 1px solid #eee;
+  border-right-width: 0;
+  color: #ffffff;
+  background-color: #444;
+  box-shadow: 0 0 5px #bbb;
+}
+.line-block .container .ribbon.green {
+  background-color: #65b977;
+  border-color: #5eb671;
+}
+.line-block .container .ribbon.orange {
+  background-color: #dcb894;
+  border-color: #d9b38c;
+}
 .container .title {
-  text-align: left;
+  text-align: center;
   height: 34px;
   font-size: 19px;
   font-weight: bold;
   margin-bottom: 35px;
   padding: 5px;
   color: #000000;
-  border-bottom: 1px dotted #000000;
 }
 .container .descr {
   width: 100%;
@@ -314,7 +303,7 @@ div#nav a.special:hover {
   line-height: 32px;
   font-weight: bold;
   border-radius: 3px;
-  background-color: #6aa000;
+  background-color: #65b977;
   color: #ffffff;
 }
 .container button.buy {
@@ -324,7 +313,7 @@ div#nav a.special:hover {
 div#footer-bar {
   padding: 0 10px;
   height: 60px;
-  background-color: #2c3440;
+  border-top: 1px solid #ddd;
 }
 div#footer-bar .copy-block {
   float: right;

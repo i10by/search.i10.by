@@ -1,15 +1,3 @@
-<div id="control-bar">
-    <div class="left">
-        <a href="#">Вакансии</a>
-        <a href="#">Реклама</a>
-    </div>
-    <div class="right">
-        <div class="panel-search">
-            <input placeholder="Что будем искать?" class="small">
-            <button class="small">Найти</button>
-        </div>
-    </div>
-</div>
 <div id="header-menu">
     <a href="/" class="logo"></a>
     <div class="content">
@@ -26,6 +14,7 @@
                 <a href="#">Наши работы</a>
                 <a href="#">Контакты</a>
                 <a href="#">Вопрос-ответ</a>
+                <a href="#">Скидки</a>
                 <a href="#" class="right special">Заказать сайт</a>
             </div>
         </div>
