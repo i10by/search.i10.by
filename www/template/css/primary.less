@@ -2,8 +2,8 @@
 @page-back: #fff;
 @control-bar-back: #fff;
 @color-nav-back: #2c3440;
-@color-radiant: #65b977;
-@color-secondary: #dcb894;
+@color-radiant: #00ba95;
+@color-secondary: #00a0ed;
 @color-font-light: #fff;
 @color-font-dark: #000;
 @color-font-radiant: #5c6781;
@@ -145,8 +145,8 @@ div#header-menu .item {
   .trans(0.15s);
 }
 div#header-menu .item:hover {
-  border-bottom: 1px solid @color-radiant;
-  color: lighten(@color-radiant, 0%);
+  border-bottom: 1px solid darken(@color-radiant, 6%);
+  color: darken(@color-radiant, 6%);
 }
 div#header-menu .item.right {
   float: right;
@@ -213,7 +213,7 @@ div#nav a.special {
 }
 div#nav a.special:hover {
   background-color: darken(#f6f6f6, 2%);
-  color: darken(@color-radiant, 20%);
+  color: darken(@color-radiant, 6%);
 }
 
 // BODY
@@ -356,6 +356,7 @@ div#footer-bar .copy-block {
   border-radius: 5px;
   font-size: 13px;
   color: lighten(@color-nav-back, 20%);
+  font-weight: bold;
 }
 div#footer-bar .social-block {
   width: 100px;

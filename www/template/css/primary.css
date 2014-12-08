@@ -116,8 +116,8 @@ div#header-menu .item {
   transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease;
 }
 div#header-menu .item:hover {
-  border-bottom: 1px solid #65b977;
-  color: #65b977;
+  border-bottom: 1px solid #009b7c;
+  color: #009b7c;
 }
 div#header-menu .item.right {
   float: right;
@@ -180,12 +180,12 @@ div#nav a.right {
   border-right: 0;
 }
 div#nav a.special {
-  color: #65b977;
+  color: #00ba95;
   background-color: #f6f6f6;
 }
 div#nav a.special:hover {
   background-color: #f1f1f1;
-  color: #397f48;
+  color: #009b7c;
 }
 #page-body {
   min-height: 600px;
@@ -274,12 +274,12 @@ div#nav a.special:hover {
   box-shadow: 0 0 5px #bbb;
 }
 .line-block .container .ribbon.green {
-  background-color: #65b977;
-  border-color: #5eb671;
+  background-color: #00ba95;
+  border-color: #00b08d;
 }
 .line-block .container .ribbon.orange {
-  background-color: #dcb894;
-  border-color: #d9b38c;
+  background-color: #00a0ed;
+  border-color: #0099e3;
 }
 .container .title {
   text-align: center;
@@ -303,7 +303,7 @@ div#nav a.special:hover {
   line-height: 32px;
   font-weight: bold;
   border-radius: 3px;
-  background-color: #65b977;
+  background-color: #00ba95;
   color: #ffffff;
 }
 .container button.buy {
@@ -325,6 +325,7 @@ div#footer-bar .copy-block {
   border-radius: 5px;
   font-size: 13px;
   color: #56657c;
+  font-weight: bold;
 }
 div#footer-bar .social-block {
   width: 100px;
