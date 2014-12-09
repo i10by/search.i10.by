@@ -293,6 +293,7 @@ div#nav a.special:hover {
 .container .descr {
   width: 100%;
   font-size: 15px;
+  height: 95px;
   margin-bottom: 35px;
   color: #000000;
 }
@@ -313,7 +314,7 @@ div#nav a.special:hover {
 div#footer-bar {
   padding: 0 10px;
   height: 60px;
-  border-top: 1px solid #ddd;
+  border-top: 2px solid #eee;
 }
 div#footer-bar .copy-block {
   float: right;
@@ -321,10 +322,10 @@ div#footer-bar .copy-block {
   line-height: 18px;
   padding: 5px;
   margin: 15px 5px 0 0;
-  border: 2px solid #56657c;
+  border: 2px solid #00a0ed;
   border-radius: 5px;
   font-size: 13px;
-  color: #56657c;
+  color: #00a0ed;
   font-weight: bold;
 }
 div#footer-bar .social-block {
