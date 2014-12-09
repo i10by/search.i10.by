@@ -35,3 +35,50 @@
         <button class="buy">Заказать</button>
     </div>
 </div>
+<div class="line-block">
+    <div class="cont-idea">
+        <div class="idea-pic"></div>
+        <div class="idea-content">
+            <div class="idea-name">Есть идея отличного сайта?</div>
+            <div class="idea-body">
+                Наша группа разработчиков рада делать заказы любой сложности.
+                <br><br>
+                Мы создаём красивые и запоминающиеся сайты в указанные сроки и за приятную цену.
+                <br><br>
+                Оставь заявку, всё остальное сделаем мы!
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line-block">
+    <div class="item-group">
+        <div class="item">
+            <div class="circle">1</div>
+            <div class="title">Подать заявку</div>
+            <div class="cont">
+                Первым делом подоём заявку и мы ответим Вам в течении нескольких минут.
+            </div>
+        </div>
+        <div class="item">
+            <div class="circle">2</div>
+            <div class="title">Уточнить подробности</div>
+            <div class="cont">
+                Чтобы сделать качественный продукт, нужно понимать все тонкости проекта.
+            </div>
+        </div>
+        <div class="item">
+            <div class="circle">3</div>
+            <div class="title">Разработка проекта</div>
+            <div class="cont">
+                Очень важный этап. По ходу разработки мы будем связываться с Вами и сообщать о результатах.
+            </div>
+        </div>
+        <div class="item">
+            <div class="circle">4</div>
+            <div class="title">Тестирование и сдача</div>
+            <div class="cont">
+                Вы принимаете работу, и, если Вас всё устраивает - мы расчитываемся.
+            </div>
+        </div>
+    </div>
+</div>

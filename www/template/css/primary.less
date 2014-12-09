@@ -97,19 +97,16 @@ html {
   padding: 0 10px;
   background: @body-back;
 }
-div#wrapper {
-  max-width: @max-width;
-  min-width: @min-width;
-  min-height: 100%;
-  margin: 20px auto;
-  border-radius: 3px;
-  overflow: hidden;
-  background-color: @page-back;
-}
 div#page {
   width: 100%;
   padding: 0 20px;
   overflow: hidden;
+  max-width: @max-width;
+  min-width: @min-width;
+  min-height: 100%;
+  margin: 20px auto 0;
+  border-radius: 3px;
+  background-color: @page-back;
 }
 div#page > * {
    position: relative;
@@ -227,9 +224,6 @@ div#nav a.special:hover {
   float: left;
   margin-bottom: 75px;
 }
-.line-block:last-child {
-  margin-bottom: 0;
-}
 .line-block .name {
   width: 100%;
   height: 40px;
@@ -310,14 +304,38 @@ div#nav a.special:hover {
   background-color: @color-secondary;
   border-color: darken(@color-secondary, 2%);
 }
-.container .title {
-  text-align: center;
-  height: 34px;
+.line-block .cont-idea {
+  width: 600px;
+  margin: 0 auto;
+}
+.line-block .idea-pic {
+  float: left;
+  width: 156px;
+  height: 200px;
+  background: #fff url("../images/idea-pic.png") no-repeat center;
+}
+.line-block .idea-content {
+  float: right;
+  width: 400px;
+}
+.line-block .idea-content .idea-name {
+  height: 24px;
+  margin-bottom: 16px;
+}
+.line-block .idea-content .idea-body {
+  width: 100%;
+  height: 160px;
+}
+.container .title, .line-block .idea-content .idea-name {
   font-size: 19px;
   font-weight: bold;
+  color: @color-font-dark;
+}
+.container .title {
+  height: 34px;
   margin-bottom: 35px;
   padding: 5px;
-  color: @color-font-dark;
+  text-align: center;
 }
 .container .descr {
   width: 100%;
@@ -340,12 +358,54 @@ div#nav a.special:hover {
   height: 34px;
   width: 100%;
 }
+.line-block .item-group {
+  width: 100%;
+  overflow: hidden;
+}
+.item-group .item {
+  width: 25%;
+  float: left;
+  padding: 0 20px;
+}
+.item-group .item .circle {
+  width: 48px;
+  height: 48px;
+  line-height: 44px;
+  text-align: center;
+  margin: 0 auto 20px;
+  background-color: @color-radiant;
+  border: 2px solid  darken(@color-radiant, 2%);
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 22px;
+  color: @color-font-light;
+}
+.item-group .item:nth-child(even) .circle {
+  background-color: @color-secondary;
+  border-color: darken(@color-secondary, 2%);
+}
+.item-group .item .title {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+.item-group .item .cont {
+  width: 100%;
+  text-align: center;
+}
 
 // FOOTER
 div#footer-bar {
   padding: 0 10px;
   height: 60px;
   border-top: 2px solid #eee;
+  max-width: @max-width;
+  min-width: @min-width;
+  min-height: 100%;
+  margin: 0 auto 20px;
+  overflow: hidden;
 }
 div#footer-bar .copy-block {
   float: right;
