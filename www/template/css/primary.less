@@ -40,6 +40,13 @@
 .right {
   float: right;
 }
+hr {
+  color: #eee;
+  background-color: #eee;
+  border: 0px none;
+  height: 2px;
+  clear: both;
+}
 input, textarea {
   padding: 8px 12px;
   outline: none;
@@ -222,7 +229,13 @@ div#nav a.special:hover {
 .line-block {
   width: 100%;
   float: left;
-  margin-bottom: 75px;
+  margin: 50px auto;
+}
+.line-block:first-child {
+  margin-top: 0;
+}
+.line-block:last-child {
+  margin-bottom: 40px;
 }
 .line-block .name {
   width: 100%;
@@ -361,11 +374,22 @@ div#nav a.special:hover {
 .line-block .item-group {
   width: 100%;
   overflow: hidden;
+  padding: 20px;
 }
 .item-group .item {
   width: 25%;
   float: left;
-  padding: 0 20px;
+  padding: 20px;
+  min-height: 220px;
+  border: 1px solid #e0e0e0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+.item-group .item:first-child {
+  border-left: 0;
+}
+.item-group .item:last-child {
+  border-right: 0;
 }
 .item-group .item .circle {
   width: 48px;
@@ -373,16 +397,27 @@ div#nav a.special:hover {
   line-height: 44px;
   text-align: center;
   margin: 0 auto 20px;
-  background-color: @color-radiant;
-  border: 2px solid  darken(@color-radiant, 2%);
+  border: 2px solid  #eee;
   border-radius: 50%;
   font-weight: bold;
   font-size: 22px;
   color: @color-font-light;
 }
-.item-group .item:nth-child(even) .circle {
-  background-color: @color-secondary;
+.item-group .item:nth-child(1) .circle {
+  color: @color-secondary;
   border-color: darken(@color-secondary, 2%);
+}
+.item-group .item:nth-child(2) .circle {
+  color: #ee8d92;
+  border-color: darken(#ee8d92, 2%);
+}
+.item-group .item:nth-child(3) .circle {
+  color: #c49eee;
+  border-color: darken(#c49eee, 2%);
+}
+.item-group .item:nth-child(4) .circle {
+  color: @color-radiant;
+  border-color: darken(@color-radiant, 2%);
 }
 .item-group .item .title {
   width: 100%;
@@ -400,7 +435,7 @@ div#nav a.special:hover {
 div#footer-bar {
   padding: 0 10px;
   height: 60px;
-  border-top: 2px solid #eee;
+  border-top: 2px solid #e0e0e0;
   max-width: @max-width;
   min-width: @min-width;
   min-height: 100%;
