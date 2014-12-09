@@ -6,6 +6,7 @@
     define('CORE_PATH', 'app/core/');
     define('PAGES_PATH', 'app/pages/');
     define('SCRIPTS_PATH', 'app/scripts/');
+    define('TPL_PATH', 'template/');
 
     # Подключение необходимых компонентов
     require_once(CORE_PATH.'config.php');

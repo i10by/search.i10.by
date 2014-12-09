@@ -36,11 +36,11 @@
     </div>
 </div>
 <div class="line-block">
-    <div class="cont-idea">
-        <div class="idea-pic"></div>
-        <div class="idea-content">
-            <div class="idea-name">Есть идея отличного сайта?</div>
-            <div class="idea-body">
+    <div class="cont-men">
+        <div class="men-pic light"></div>
+        <div class="men-content">
+            <div class="men-name">Есть идея отличного сайта?</div>
+            <div class="men">
                 Наша группа разработчиков рада делать заказы любой сложности.
                 <br><br>
                 Мы создаём красивые и запоминающиеся сайты в указанные сроки и за приятную цену.

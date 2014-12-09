@@ -1,7 +1,7 @@
 <?  // Router
 
     $url = explode('/', $_SERVER['REQUEST_URI']);
-    $url_page = "index";
+    $url_page = "services";
 
     if (!empty($url[1]))
         $url_page = $url[1];

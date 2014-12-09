@@ -3,15 +3,15 @@
     <div class="content">
         <div class="line">
             <div class="item special">+375 (44) 729-12-68</div>
-            <div class="item">Компания</div>
-            <div class="item">Клиентам</div>
-            <div class="item">Партнёрам</div>
+            <a href="#" class="item">Клиентам</a>
+            <a href="#" class="item">Партнёрам</a>
+            <a href="#" class="item">Вакансии</a>
             <div class="item country right"><div class="icon-country bel"></div> Беларусь</div>
         </div>
         <div class="line">
             <div id="nav">
-                <a href="#">Услуги</a>
-                <a href="#">Наши работы</a>
+                <a href="/services">Услуги</a>
+                <a href="/portfolio">Наши работы</a>
                 <a href="#">Контакты</a>
                 <a href="#">Вопрос-ответ</a>
                 <a href="#">Скидки</a>

@@ -18,5 +18,5 @@
     }
 
     function get_template($tml_name) {
-        include 'template/'.$tml_name.'.php';
+        include TPL_PATH.$tml_name.'.php';
     }
