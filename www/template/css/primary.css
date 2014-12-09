@@ -409,7 +409,7 @@ div#footer-bar {
   max-width: 1070px;
   min-width: 900px;
   min-height: 100%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   overflow: hidden;
 }
 div#footer-bar .copy-block {
