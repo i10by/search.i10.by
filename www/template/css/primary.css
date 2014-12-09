@@ -273,6 +273,10 @@ div#nav a.special:hover {
   text-align: center;
   line-height: 32px;
   font-size: 14px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   border: 1px solid #eee;
   border-right-width: 0;
