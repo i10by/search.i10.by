@@ -14,9 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'pt sans', arial, tahoma;
-  font-size: 15px;
-  font-weight: normal;
+  font: normal 15px 'pt sans', arial, tahoma;
   -webkit-backface-visibility: hidden;
   cursor: default;
 }
@@ -26,12 +24,19 @@
 .right {
   float: right;
 }
+span.red {
+  font-size: 20px;
+  color: #bf6d83;
+}
 hr {
   color: #eee;
   background-color: #eee;
   border: 0px none;
   height: 2px;
   clear: both;
+}
+img {
+  vertical-align: bottom;
 }
 input,
 textarea {
@@ -207,7 +212,6 @@ div#nav a.special:hover {
   color: #009b7c;
 }
 #page-body {
-  min-height: 600px;
   margin: 20px;
   padding: 20px 0;
 }
@@ -262,8 +266,7 @@ div#nav a.special:hover {
   padding-bottom: 0;
 }
 .line-block .container,
-.line-block.special,
-.card {
+.line-block.special {
   padding: 15px;
   border: 1px solid #ccc;
   background-color: #f0f0f0;
@@ -329,6 +332,12 @@ div#nav a.special:hover {
 }
 .line-block .men-pic.port {
   background-image: url("../images/idea-pic-port.png");
+}
+.line-block .men-pic.cont {
+  background-image: url("../images/idea-pic-cont.png");
+}
+.line-block .men-pic.mess {
+  background-image: url("../images/idea-pic-mess.png");
 }
 .line-block .men-content {
   float: right;
@@ -449,8 +458,11 @@ div#nav a.special:hover {
   display: block;
   width: 100%;
   height: 100%;
+  padding: 10px;
   transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
   text-decoration: none;
+  border: 2px solid #ddd;
+  background-color: #eee;
 }
 .card:hover {
   opacity: 0.75;
@@ -470,21 +482,79 @@ div#nav a.special:hover {
   overflow: hidden;
   color: #ffffff;
   background-color: #00ba95;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
 }
 .card .content {
   width: 100%;
-  height: 100%;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  height: 161px;
   overflow: hidden;
 }
 .card .content img {
   width: 100%;
   height: 100%;
+}
+.card-tip {
+  height: 130px;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
+  color: #161f35;
+  border-top-width: 3px;
+}
+.card-tip .title {
+  width: 100%;
+  overflow: hidden;
+  height: 15px;
+  line-height: 15px;
+}
+.card-tip .content {
+  width: 100%;
+  margin-top: 11px;
+  height: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  overflow: hidden;
+}
+form.new-ord {
+  width: 400px;
+  margin: 0 auto 50px;
+}
+form.new-ord .title {
+  width: 100%;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+form.new-ord .content {
+  width: 100%;
+  overflow: hidden;
+}
+form.new-ord .section {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+form.new-ord .section .name {
+  font-size: 15px;
+  height: 20px;
+  line-height: 20px;
+}
+form.new-ord .section input,
+form.new-ord .section textarea {
+  width: 100%;
+  margin-top: 10px;
+  border-width: 2px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+}
+form.new-ord .section input:focus,
+form.new-ord .section textarea:focus {
+  border-color: #00ba95;
 }
 div#footer-bar {
   padding: 0 10px;
@@ -499,8 +569,8 @@ div#footer-bar {
 div#footer-bar .copy-block {
   float: right;
   height: 30px;
-  line-height: 18px;
-  padding: 5px;
+  line-height: 28px;
+  padding: 0 5px;
   margin: 15px 5px 0 0;
   border: 2px solid #00a0ed;
   -moz-border-radius: 5px;
