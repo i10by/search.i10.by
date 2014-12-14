@@ -116,7 +116,7 @@ div#page {
   padding: 0 20px;
   overflow: hidden;
   max-width: 1070px;
-  min-width: 1070px;
+  min-width: 970px;
   min-height: 100%;
   margin: 20px auto 0;
   -moz-border-radius: 3px;
@@ -636,7 +636,7 @@ div#footer-bar {
   height: 60px;
   border-top: 2px solid #e0e0e0;
   max-width: 1070px;
-  min-width: 1070px;
+  min-width: 970px;
   min-height: 100%;
   margin: 0 auto;
   overflow: hidden;
