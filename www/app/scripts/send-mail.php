@@ -2,7 +2,7 @@
     if(!is_ajax_req())
         header("Location: /");
 
-    $to  = "unwers@gmail.com";
+    $to  = "a.l.parfenkov@gmail.com";
 
     $subject = "Новая заявка на заказ! - i10.by";
 
@@ -19,7 +19,7 @@
                         </td>
                         <td width="20%">
                             <a href="http://i10.by/">
-                                <img style="height: 50px; background-size: 100%" src="http://lod.vv.si/template/images/logo.png">
+                                <img style="height: 50px; background-size: 100%" src="http://i10.by/template/images/logo-small.png">
                             </a>
                         </td>
                     </tr>

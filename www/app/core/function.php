@@ -27,3 +27,35 @@
 
         return false;
     }
+
+    function get_title($url) {
+        switch($url) {
+            case("404"):
+                echo "Страница не найдена";
+                break;
+            case("contacts"):
+                echo "Контакты";
+                break;
+            case("discounts"):
+                echo "Скидки";
+                break;
+            case("new"):
+                echo "Оформление заказа";
+                break;
+            case("partners"):
+                echo "Партнёрам";
+                break;
+            case("portfolio"):
+                echo "Портфолио";
+                break;
+            case("services"):
+                echo "Заказать сайт";
+                break;
+            case("vacancies"):
+                echo "Вакансии";
+                break;
+            default:
+                echo "";
+                break;
+        }
+    }
