@@ -9,7 +9,10 @@
         <div class="price">
             1 900 000 б.р.
         </div>
-        <button class="buy">Заказать</button>
+        <form action="/new" method="post">
+            <input type="hidden" name="q" value="Сайт-визитка">
+            <button class="buy">Заказать</button>
+        </form>
     </div>
     <div class="container">
         <div class="ribbon orange">Скидка 5%</div>
@@ -21,7 +24,10 @@
         <div class="price">
             4 900 000 б.р.
         </div>
-        <button class="buy">Заказать</button>
+        <form action="/new" method="post">
+            <input type="hidden" name="q" value="Интернет магазин">
+            <button class="buy">Заказать</button>
+        </form>
     </div>
     <div class="container">
         <div class="ribbon red">Скидка 2%</div>
@@ -33,7 +39,10 @@
         <div class="price">
             6 900 000 б.р.
         </div>
-        <button class="buy">Заказать</button>
+        <form action="/new" method="post">
+            <input type="hidden" name="q" value="Корпаративный сайт">
+            <button class="buy">Заказать</button>
+        </form>
     </div>
 </div>
 <div class="line-block">

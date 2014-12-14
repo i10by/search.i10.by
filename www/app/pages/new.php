@@ -18,7 +18,7 @@
             </div>
             <div class="section">
                 <div class="name">Подробности заказа:</div>
-                <textarea name="deals" id="bid-deals" rows="5"></textarea>
+                <textarea name="deals" id="bid-deals" rows="5"><? echo $_POST['q']; ?></textarea>
             </div>
         </div>
         <button>Отправить</button>
