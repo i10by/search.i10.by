@@ -1,5 +1,6 @@
 <?
-    header("Location: /");
+    if(!is_ajax_req())
+        header("Location: /");
 
     $to  = "unwers@gmail.com";
 

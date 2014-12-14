@@ -2,29 +2,29 @@ $('#send-mail').on("submit", function() {
     if(!is_valid_inp($("#bid-phone").val()))
         return false;
 
-    var d = {name: $("#bid-name").val(), phone: $("#bid-phone").val(), deals: $("#bid-deals").val()};
-
-    $.ajax({
-        type: "post",
-        url: "/s/send-mail",
-        data: d,
-        dataType: "html",
-        success: function(res) {
-            send_mail_end(res);
-        }
-    });
+    $.post(
+        "/s/send-mail",
+        {
+            ajax_req: '1',
+            name: $("#bid-name").val(),
+            phone: $("#bid-phone").val(),
+            deals: $("#bid-deals").val()
+        },
+        send_mail_end
+    );
 
     return false;
 });
 
 function send_mail_end(res) {
-    $('#send-mail-success').fadeIn(0);
-    $('#send-mail-content').fadeOut(0);
+    alert(res);
+    $('#send-mail-success').show();
+    $('#send-mail-content').hide();
 }
 
 $("#zak-ag").on("click", function() {
-    $('#send-mail-success').fadeOut(0);
-    $('#send-mail-content').fadeIn(0);
+    $('#send-mail-success').hide();
+    $('#send-mail-content').show();
 
     $("#bid-name").val("");
     $("#bid-phone").val("");

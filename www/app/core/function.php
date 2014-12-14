@@ -20,3 +20,10 @@
     function get_template($tml_name) {
         include TPL_PATH.$tml_name.'.php';
     }
+
+    function is_ajax_req() {
+        if($_POST['ajax_req'] == '1')
+            return true;
+
+        return false;
+    }

@@ -10,7 +10,7 @@
         $url_sector = $url[2];
 
     if($url_page == "s")
-        include_end(SCRIPTS_PATH.$url_sector.'.php');
+        include_end(SCRIPTS_PATH . $url_sector . '.php');
 
     $page_addr = PAGES_PATH.$url_page.'.php';
 
