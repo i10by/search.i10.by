@@ -24,7 +24,7 @@
         <button class="buy">Заказать</button>
     </div>
     <div class="container">
-        <div class="ribbon red">Скидка 5%</div>
+        <div class="ribbon red">Скидка 2%</div>
         <div class="title">Корпоративный сайт</div>
         <div class="descr">
             Подойдёт для больших и влиятельных компаний.<br><br>

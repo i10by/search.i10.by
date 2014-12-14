@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <title>Создание сайтов в Беларуси</title>
+        <title>Создание сайтов в Беларуси - i10.by</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Группа разработчиков i10 создаёт и продвигает высококачественные и красивые сайты любой сложности за умеренную цену.">
         <link rel="stylesheet" href="/template/css/primary.css" media="screen">

@@ -504,20 +504,9 @@ div#nav a.special:hover {
   width: 100%;
   height: 100%;
   padding: 10px;
-  transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
-  -webkit-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
-  -moz-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
-  -o-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
   text-decoration: none;
   border: 2px solid #ddd;
   background-color: #eee;
-}
-.card:hover {
-  opacity: 0.75;
-}
-.card,
-.card * {
-  cursor: pointer;
 }
 .card .title {
   width: 100%;
@@ -592,6 +581,39 @@ form.new-ord .section input,
 form.new-ord .section textarea {
   width: 100%;
   margin-top: 10px;
+}
+form.new-ord button {
+  float: right;
+  margin-top: 10px;
+}
+div#send-mail-content {
+  overflow: hidden;
+}
+div#send-mail-success {
+  width: 100%;
+  height: 415px;
+  display: none;
+}
+div#send-mail-success .in {
+  position: absolute;
+  height: 60px;
+  width: 400px;
+  text-align: center;
+  top: 150px;
+}
+div#send-mail-success .text {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+}
+div#send-mail-success #zak-ag {
+  line-height: 30px;
+  color: #00a0ed;
+  text-decoration: underline;
+  cursor: pointer;
+}
+div#send-mail-success #zak-ag:hover {
+  text-decoration: none;
 }
 .table-cont {
   width: 100%;

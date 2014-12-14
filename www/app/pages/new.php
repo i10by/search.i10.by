@@ -1,18 +1,27 @@
-<form class="new-ord">
-    <div class="title">Оформление заявки</div>
-    <div class="content">
-        <div class="section">
-            <div class="name">Имя:</div>
-            <input autofocus>
+<form class="new-ord" method="post" id="send-mail">
+    <div id="send-mail-success">
+        <div class="in">
+            <div class="text">Спасибо!</div>
+            <div id="zak-ag">Подать ещё одну заявку</div>
         </div>
-        <div class="section">
-            <div class="name">Телефон<span class="red">*</span>:</div>
-            <input placeholder="Обязательное поле">
+    </div>
+    <div id="send-mail-content">
+        <div class="title">Оформление заявки</div>
+        <div class="content">
+            <div class="section">
+                <div class="name">Имя:</div>
+                <input name="name" id="bid-name" autofocus>
+            </div>
+            <div class="section">
+                <div class="name">Телефон<span class="red">*</span>:</div>
+                <input name="phone" id="bid-phone" placeholder="Обязательное поле" required>
+            </div>
+            <div class="section">
+                <div class="name">Подробности заказа:</div>
+                <textarea name="deals" id="bid-deals" rows="5"></textarea>
+            </div>
         </div>
-        <div class="section">
-            <div class="name">Подробности заказа:</div>
-            <textarea rows="5"></textarea>
-        </div>
+        <button>Отправить</button>
     </div>
 </form>
 <div class="line-block">

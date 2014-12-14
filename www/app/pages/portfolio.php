@@ -13,19 +13,19 @@
 </div>
 <div class="row-cards">
     <div class="card-cover">
-        <a href="#" class="card">
+        <div class="card">
             <div class="title">Ф/Х Парфенькова А.Л.</div>
             <div class="content">
                 <img src="template/images/pf-prev.jpg">
             </div>
-        </a>
+        </div>
     </div>
     <div class="card-cover">
-        <a href="#" class="card">
+        <div class="card">
             <div class="title">Ф/Х Парфенькова Л.Н.</div>
             <div class="content">
                 <img src="template/images/parf-prev.jpg">
             </div>
-        </a>
+        </div>
     </div>
 </div>
