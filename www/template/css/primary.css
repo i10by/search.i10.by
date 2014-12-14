@@ -35,6 +35,15 @@ hr {
   height: 2px;
   clear: both;
 }
+table {
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
 img {
   vertical-align: bottom;
 }
@@ -43,23 +52,21 @@ textarea {
   padding: 8px 12px;
   outline: none;
   cursor: text;
-  border: 1px solid #b0b0b0;
-  -moz-box-shadow: inset 0 1px 3px #cccccc;
-  -webkit-box-shadow: inset 0 1px 3px #cccccc;
-  box-shadow: inset 0 1px 3px #cccccc;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  transition: box-shadow 0.1s ease, background 0.1s ease, border 0.1s ease, color 0.1s ease, opacity 0.1s ease;
+  border: 2px solid #b0b0b0;
+  transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -webkit-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -moz-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -o-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
 }
 input:hover,
-input:focus {
+input:focus,
+textarea:hover,
+textarea:focus {
   border-color: #909090;
 }
-input:focus {
-  -moz-box-shadow: inset 0 2px 5px #bbbbbb;
-  -webkit-box-shadow: inset 0 2px 5px #bbbbbb;
-  box-shadow: inset 0 2px 5px #bbbbbb;
+input:focus,
+textarea:focus {
+  border-color: #00ba95;
 }
 input.small {
   padding: 5px 10px;
@@ -75,6 +82,9 @@ button {
   border-radius: 3px;
   font-size: 15px;
   transition: box-shadow 0.1s ease, background 0.1s ease, border 0.1s ease, color 0.1s ease, opacity 0.1s ease;
+  -webkit-transition: box-shadow 0.1s ease, background 0.1s ease, border 0.1s ease, color 0.1s ease, opacity 0.1s ease;
+  -moz-transition: box-shadow 0.1s ease, background 0.1s ease, border 0.1s ease, color 0.1s ease, opacity 0.1s ease;
+  -o-transition: box-shadow 0.1s ease, background 0.1s ease, border 0.1s ease, color 0.1s ease, opacity 0.1s ease;
 }
 button.small {
   padding: 5px 10px;
@@ -87,6 +97,14 @@ button:active {
   border-color: #9d9d9d;
   background-color: #d0d0d0;
 }
+a {
+  color: #00a0ed;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
 html {
   width: 100%;
   min-height: 100%;
@@ -98,7 +116,7 @@ div#page {
   padding: 0 20px;
   overflow: hidden;
   max-width: 1070px;
-  min-width: 900px;
+  min-width: 100px;
   min-height: 100%;
   margin: 20px auto 0;
   -moz-border-radius: 3px;
@@ -125,6 +143,7 @@ div#header-menu .content {
 div#header-menu .content .line {
   height: 50px;
   width: 100%;
+  overflow: hidden;
 }
 div#header-menu .item {
   display: block;
@@ -133,8 +152,10 @@ div#header-menu .item {
   margin: 15px 30px 0 0;
   color: #000000;
   border-bottom: 1px dotted #555;
-  cursor: pointer;
   transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -webkit-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -moz-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -o-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
   text-decoration: none;
 }
 div#header-menu .item:hover {
@@ -152,6 +173,8 @@ div#header-menu .item.special {
   margin-right: 20px;
   border-bottom: 0;
   cursor: default;
+  height: 22px;
+  overflow: hidden;
 }
 div#header-menu .item.country {
   border-bottom: 0;
@@ -191,8 +214,10 @@ div#nav a {
   padding: 0 20px;
   color: #444;
   text-decoration: none;
-  cursor: pointer;
   transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -webkit-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -moz-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -o-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
 }
 div#nav a:hover {
   background-color: #e4e4e4;
@@ -317,9 +342,14 @@ div#nav a.special:hover {
   background-color: #00a0ed;
   border-color: #0099e3;
 }
+.line-block .container .ribbon.red {
+  background-color: #e08083;
+  border-color: #de787b;
+}
 .line-block .cont-men {
   width: 600px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .line-block .men-pic {
   float: left;
@@ -339,9 +369,22 @@ div#nav a.special:hover {
 .line-block .men-pic.mess {
   background-image: url("../images/idea-pic-mess.png");
 }
+.line-block .men-pic.discount {
+  background-image: url("../images/discount.png");
+}
+.line-block .men-pic.partners {
+  background-image: url("../images/partners.png");
+}
+.line-block .men-pic.ad {
+  background-image: url("../images/ad.png");
+}
 .line-block .men-content {
   float: right;
   width: 400px;
+}
+.line-block .men-content.center {
+  width: 400px;
+  margin: 0 auto;
 }
 .line-block .men-content .men-name {
   height: 24px;
@@ -352,7 +395,8 @@ div#nav a.special:hover {
   height: 160px;
 }
 .container .title,
-.line-block .men-content .men-name {
+.line-block .men-content .men-name,
+.table-cont .title {
   font-size: 19px;
   font-weight: bold;
   color: #000000;
@@ -369,6 +413,7 @@ div#nav a.special:hover {
   height: 95px;
   margin-bottom: 35px;
   color: #000000;
+  overflow: hidden;
 }
 .container .price {
   width: 100%;
@@ -460,6 +505,9 @@ div#nav a.special:hover {
   height: 100%;
   padding: 10px;
   transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -webkit-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -moz-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  -o-transition: box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease, color 0.15s ease, opacity 0.15s ease;
   text-decoration: none;
   border: 2px solid #ddd;
   background-color: #eee;
@@ -481,7 +529,7 @@ div#nav a.special:hover {
   text-align: center;
   overflow: hidden;
   color: #ffffff;
-  background-color: #00ba95;
+  background-color: #00a0ed;
 }
 .card .content {
   width: 100%;
@@ -544,24 +592,33 @@ form.new-ord .section input,
 form.new-ord .section textarea {
   width: 100%;
   margin-top: 10px;
-  border-width: 2px;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -moz-box-shadow: 0 0 0 0;
-  -webkit-box-shadow: 0 0 0 0;
-  box-shadow: 0 0 0 0;
 }
-form.new-ord .section input:focus,
-form.new-ord .section textarea:focus {
-  border-color: #00ba95;
+.table-cont {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto 40px;
+}
+.table-cont .title {
+  text-align: center;
+}
+.table-cont table {
+  width: 100%;
+  margin-top: 20px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  overflow: hidden;
+}
+.table-cont table td:first-child {
+  width: 250px;
+  font-weight: bold;
 }
 div#footer-bar {
   padding: 0 10px;
   height: 60px;
   border-top: 2px solid #e0e0e0;
   max-width: 1070px;
-  min-width: 900px;
+  min-width: 100px;
   min-height: 100%;
   margin: 0 auto;
   overflow: hidden;

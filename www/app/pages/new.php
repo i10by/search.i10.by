@@ -3,7 +3,7 @@
     <div class="content">
         <div class="section">
             <div class="name">Имя:</div>
-            <input placeholder="Будем весьма благодарны" autofocus>
+            <input autofocus>
         </div>
         <div class="section">
             <div class="name">Телефон<span class="red">*</span>:</div>
@@ -15,14 +15,13 @@
         </div>
     </div>
 </form>
-
 <div class="line-block">
     <div class="cont-men">
         <div class="men-pic mess"></div>
         <div class="men-content">
             <div class="men-name">Хотите подать заявку?</div>
             <div class="men">
-                Для этого необязательно заполнять все поля, но если вы всётаки реши это сделать, то Вы нам существенно поможите.
+                Для этого не обязательно заполнять все поля.
                 <br><br>
                 Минимальная заявка состоит лишь из номера телефона, на который мы перезвоним вам в течении нескольких минут.
                 <br><br>
@@ -31,3 +30,4 @@
         </div>
     </div>
 </div>
+=

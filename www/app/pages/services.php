@@ -1,6 +1,6 @@
 <div class="line-block">
     <div class="container">
-        <div class="ribbon green">Скидка -10%</div>
+            <div class="ribbon green">Скидка 10%</div>
         <div class="title">Сайт-визитка</div>
         <div class="descr">
             Красивый и информативный сайт за небольшие деньги.<br><br>
@@ -12,7 +12,7 @@
         <button class="buy">Заказать</button>
     </div>
     <div class="container">
-        <div class="ribbon orange">Скидка -5%</div>
+        <div class="ribbon orange">Скидка 5%</div>
         <div class="title">Интернет магазин</div>
         <div class="descr">
             Интернет магазин с красивым дизайном, контентом и лёгким управлением.<br><br>
@@ -24,6 +24,7 @@
         <button class="buy">Заказать</button>
     </div>
     <div class="container">
+        <div class="ribbon red">Скидка 5%</div>
         <div class="title">Корпоративный сайт</div>
         <div class="descr">
             Подойдёт для больших и влиятельных компаний.<br><br>
