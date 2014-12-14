@@ -307,6 +307,7 @@ div#nav a.special:hover {
   float: left;
   text-align: center;
   overflow: hidden;
+  z-index: 1005;
 }
 .line-block .container:last-child {
   margin-right: 0;
@@ -332,6 +333,7 @@ div#nav a.special:hover {
   -moz-box-shadow: 0 0 5px #bbbbbb;
   -webkit-box-shadow: 0 0 5px #bbbbbb;
   box-shadow: 0 0 5px #bbbbbb;
+  z-index: 1105;
 }
 .line-block .container .ribbon.green {
   background-color: #00ba95;
