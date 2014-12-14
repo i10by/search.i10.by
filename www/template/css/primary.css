@@ -112,11 +112,9 @@ html {
   background: #ffffff;
 }
 div#page {
-  width: 100%;
+  width: 1070px;
   padding: 0 20px;
   overflow: hidden;
-  max-width: 1070px;
-  min-width: 970px;
   min-height: 100%;
   margin: 20px auto 0;
   -moz-border-radius: 3px;
