@@ -8,7 +8,6 @@
 
     $message = '<html>
         <head>
-            <meta http-equiv="Content-type" content="text/html; charset=utf-8">
             <title>Уведомления - i10.by</title>
         </head>
         <body>
@@ -45,6 +44,6 @@
     </html>';
 
     $headers  = "Content-type: text/html; charset=utf-8 \r\n";
-    $headers .= "From: <notifications@i10.by> \r\n";
+    $headers .= "From: i10.by <notifications@i10.by> \r\n";
 
     mail($to, $subject, $message, $headers);

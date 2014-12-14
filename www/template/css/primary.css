@@ -37,8 +37,8 @@ hr {
 }
 table {
   border-collapse: collapse;
+  border: 2px solid #ffffff;
 }
-table,
 th,
 td {
   border: 1px solid #ddd;
@@ -306,7 +306,7 @@ div#nav a.special:hover {
   margin-right: 2%;
   float: left;
   text-align: center;
-  height: 317px;
+  height: 327px;
   overflow: hidden;
 }
 .line-block .container:last-child {
@@ -410,7 +410,7 @@ div#nav a.special:hover {
 .container .descr {
   width: 100%;
   font-size: 15px;
-  height: 95px;
+  height: 105px;
   margin-bottom: 35px;
   color: #000000;
   overflow: hidden;
@@ -626,10 +626,6 @@ div#send-mail-success #zak-ag:hover {
 .table-cont table {
   width: 100%;
   margin-top: 20px;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
-  border-radius: 1px;
-  overflow: hidden;
 }
 .table-cont table td:first-child {
   width: 250px;
