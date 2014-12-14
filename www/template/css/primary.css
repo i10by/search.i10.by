@@ -112,9 +112,11 @@ html {
   background: #ffffff;
 }
 div#page {
-  width: 1070px;
+  width: 100%;
   padding: 0 20px;
   overflow: hidden;
+  max-width: 1070px;
+  min-width: 800px;
   min-height: 100%;
   margin: 20px auto 0;
   -moz-border-radius: 3px;
@@ -304,7 +306,6 @@ div#nav a.special:hover {
   margin-right: 2%;
   float: left;
   text-align: center;
-  height: 327px;
   overflow: hidden;
 }
 .line-block .container:last-child {
@@ -408,7 +409,6 @@ div#nav a.special:hover {
 .container .descr {
   width: 100%;
   font-size: 15px;
-  height: 105px;
   margin-bottom: 35px;
   color: #000000;
   overflow: hidden;
@@ -634,7 +634,7 @@ div#footer-bar {
   height: 60px;
   border-top: 2px solid #e0e0e0;
   max-width: 1070px;
-  min-width: 970px;
+  min-width: 800px;
   min-height: 100%;
   margin: 0 auto;
   overflow: hidden;

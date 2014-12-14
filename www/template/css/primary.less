@@ -8,7 +8,7 @@
 @color-font-dark: #000;
 @color-font-radiant: #5c6781;
 
-@min-width: 970px;
+@min-width: 800px;
 @max-width: 1070px;
 
 .transition(@s) {
@@ -150,9 +150,11 @@ html {
   background: @body-back;
 }
 div#page {
-  width: 1070px;
+  width: 100%;
   padding: 0 20px;
   overflow: hidden;
+  max-width: @max-width;
+  min-width: @min-width;
   min-height: 100%;
   margin: 20px auto 0;
   .border-radius(3px);
@@ -331,7 +333,6 @@ div#nav a.special:hover {
   margin-right: 2%;
   float: left;
   text-align: center;
-  height: 327px;
   overflow: hidden;
 }
 .line-block .container:last-child {
@@ -427,7 +428,6 @@ div#nav a.special:hover {
 .container .descr {
   width: 100%;
   font-size: 15px;
-  height: 105px;
   margin-bottom: 35px;
   color: @color-font-dark;
   overflow: hidden;
