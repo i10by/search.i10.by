@@ -17,7 +17,6 @@ $('#send-mail').on("submit", function() {
 });
 
 function send_mail_end(res) {
-    alert(res);
     $('#send-mail-success').show();
     $('#send-mail-content').hide();
 }
